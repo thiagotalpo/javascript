@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Variáveis</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual é o seu nome')
+        document.write(`Olá ${nome}, Seu nome tem ${nome.length} Letras <br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br>`)
+
+//      Formatando números
+        var n1 = 1545.5
+        document.write(`${n1.toFixed(2).replace(".",",")}`)
+//      document.write(${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})})
+    </script>
+</body>
+</html>
