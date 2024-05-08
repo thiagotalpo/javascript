@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+
+        span#maiuscula {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="vel" id="ivel"> KM/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="div">
+
+    </div>
+    <script>
+        var vel = document.getElementById('ivel')
+        function calcular() {
+            div.innerHTML = `<p>Sua velocidade atual é <strong>${vel.value}KM/H</strong></p>`
+            if (ivel.value > 60) {
+                div.innerHTML += `<p>Você está <span id="maiuscula">acima</span> da velocidade permitida e foi <strong>MULTADO</strong></p>`
+            } else {
+                div.innerHTML += `<p>Você está <span id="maiuscula">dentro</span> do limite de velocidade permitido. Siga sua viagem!`
+            }
+        }
+    </script>
+</body>
+</html>
