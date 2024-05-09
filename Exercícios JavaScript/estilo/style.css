@@ -12,6 +12,7 @@ header {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 section {
@@ -25,15 +26,13 @@ section {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.425);
 }
 
-div > p {
-    margin-top: 20px;
+div#texto {
+    margin-top: 10px;
+    font-size: 1.3em;
 }
 
 div > img {
-    width: 60vw;
-    border-radius: px;
-    padding: 0px;
-    margin-top: 20px;
+    margin-top: 17px;
 } 
 
 footer {
